@@ -1,0 +1,58 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #FFC300;
+	color: #333;
+	padding: 10px;
+}
+
+.menu-section {
+	border: 1px solid #000;
+	background-color: #DDD;
+	float: left;
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	width: 33.33%;
+}
+
+.section-title {
+	background-color: #000;
+	color: #FFF;
+	font-size: 125%;
+	padding: 5px 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.section-content {
+	margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+	.menu-section {
+		width: 50%;
+	}
+
+	.menu-section:nth-child(3) {
+		clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+	.menu-section {
+		width: 100%;
+	}
+
+	.section-title {
+		font-size: 150%;
+	}
+}
